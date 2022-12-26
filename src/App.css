@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: San-r;
+  src: url('./font/SourceSansPro-Regular.ttf');
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: San-t;
+  src: url('./font/SourceSansPro-Light.ttf');
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: San-b;
+  src: url('./font/SourceSansPro-Bold.ttf');
 }
-
-.App-header {
-  background-color: #282c34;
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   min-height: 100vh;
+  font-family: sans-serif;
+}
+:root{
+--grey-2:#3c3f45;
+--grey-1:#646464;
+--grey-3:#484848;
+--orange : #F6830F;
+}
+.blur{
+  background-color: rgba(253, 120, 43, 1);
+  position:absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: -9;
+}
+.App{
+  mix-blend-mode: overlay;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 6rem;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  font-family: San-r;
+  letter-spacing: 0.09rem;
+  background-color: var(--grey-1);
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.stroke-text{
+  color: transparent;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

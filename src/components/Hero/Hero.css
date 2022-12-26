@@ -1,0 +1,260 @@
+.Hero{
+     display: flex;
+     justify-content: space-between;
+}
+.left-h{
+     flex: 3;
+}
+.right-h{
+     flex: 1;
+     position: relative;
+     background-color: var(--orange);
+}
+.best-workout-ad{
+     width: fit-content;
+     border-radius: 4rem;
+     background-color: var(--grey-2);
+     padding: 0.8rem 0.3rem;
+     margin: 4rem 0px 2rem 2rem;
+     text-transform: uppercase;
+     color: white;
+     font-family: San-t;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+}
+.best-workout-ad > span{
+     z-index: 2;
+     margin: 0px 0.5rem;
+}
+.best-workout-ad > div{
+     position: absolute;
+     background-color: var(--orange);
+     width: 20%;
+     height: 80%;
+     border-radius: 3rem;
+     z-index: 1;
+}
+.Hero-text{
+     display: flex;
+     flex-direction: column;
+     text-transform: uppercase;
+     font-size: 4rem;
+     text-overflow: inherit;
+     font-family: San-b;
+     color: white;
+     justify-content: center;
+     padding: 0px 2rem;
+}
+.Hero-text > div:first-child span:first-child{
+     padding-right:1rem ;
+     
+}
+.Hero-text > div:nth-of-type(3){
+     font-size: 1rem;
+     font-weight: 200;
+     width: 65%;
+     padding-bottom:1rem ;
+     padding-top: 1rem;
+     text-transform: none;
+     letter-spacing: 0.1rem;
+     font-family: San-r;
+}
+.figures{
+     display: flex;
+     gap: 1rem;
+     margin-left: 2rem;
+}
+.figures > div{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.figures > div > span:nth-of-type(1){
+     color: white;
+     font-family: San-b;
+     font-size: 1.5rem;
+}
+.figures > div > span:nth-of-type(2){
+     color:var(--grey-2);
+     text-transform: uppercase;
+     font-size: 0.8rem;
+}
+.Hero-buttons{
+     display: flex;
+     gap: 1rem;
+     margin: 2rem;
+}
+.btn{
+     color: white;
+     height: 2.5rem;
+     border: none;
+     font-weight: 400;
+     transition: all ease-out;
+}
+.Hero-buttons > button:nth-of-type(1){
+     background-color: var(--orange);
+     border: none;
+     width: 15%;
+}
+.Hero-buttons > button:nth-of-type(2){
+     background-color: transparent;
+     border: solid 1px white;
+     width: 15%;
+}  
+.right-h > .btn{
+     color: black;
+}
+.right-h > button{
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    width: 5rem;
+    border-radius: 1px;
+    font-family: San-b;
+}
+.heart-rate{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 0.7rem;
+     width: fit-content;
+     padding: 0.7rem;
+     align-items: flex-start;
+     border-radius: 5px;
+     position: absolute;
+     right: 1rem;
+     top: 7rem;
+     background-color: var(--grey-3);
+}
+.heart-rate > span:nth-of-type(1){
+     color: rgb(163, 163, 163);
+     font-size: 0.8rem;
+     
+}
+.heart-rate > span:nth-of-type(2){
+     color: white;
+     font-weight: 900;
+     font-size: 1.5rem;
+}
+.heart-rate > img{
+     width: 2rem;
+}
+.Hero-image{
+     width: 25rem;
+     position: absolute;
+     right: 5rem;
+     top: 7rem;
+}
+.calories{
+     position: absolute;
+     background-color: grey;
+     display: flex;
+     gap: 1rem;
+     height: 4rem;
+     align-items: center;
+     justify-content: start;
+     top: 35rem;
+     right: 30rem;
+     border-radius: 3px;
+     width: 9.5rem;
+     padding: 0px 0.5rem;
+}
+.calories > div{
+     display: flex;
+     flex-direction: column;
+     width: 5rem;
+     gap: 0.5rem;
+}
+.calories > img{
+     width: 20%;
+     height: 50%;
+}
+.calories > div > span:nth-of-type(1){
+     color: rgb(207, 206, 206);
+     width: 8rem;
+     font-size: 0.8rem;
+}
+.calories > div > span:nth-of-type(2){
+     color: white;
+     font-weight: 900;
+}
+.Hero-blur{
+     width: 22rem;
+     height: 30rem;
+     left: 0;
+}
+img[alt='Hero-image-back']{
+     position: absolute;
+     top: 10rem;
+     right: 7rem;
+     z-index: -1;
+     opacity: 0.8;
+}
+
+/* media */
+@media screen and (max-width:768px)
+{
+.Hero{
+     flex-direction: column;
+}
+.Hero-blur{
+     width: 10rem;
+}
+.best-workout-ad{
+     margin: 3rem 0px 2rem 1.4rem;
+     font-size: small;
+     align-self: center;
+     justify-content: center;
+     transform: scale(0.8,1.1);
+}
+.Hero-text{
+     font-size: xx-large;
+     align-items: center;
+     justify-content: center;
+}
+.Hero-text > div:nth-of-type(3){
+   font-size:medium;
+   font-weight: 200;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-bottom: 2rem;
+}
+.figures > div{
+     align-items: flex-start;
+}
+.Hero-buttons{
+     justify-content: center;
+}
+.Hero-buttons > button.btn{
+     width: 40%;
+}
+.right-h{
+     position: relative;
+     background: none;
+}
+.right-h > .heart-rate > span:nth-of-type(2){
+    font-size: 1rem;
+}
+.right-h > .heart-rate{
+     top: 2rem;
+     left: 3rem;
+}
+.Hero-image{
+     width: 20rem;
+     position: relative;
+     right: 0;
+}
+img[alt='Hero-image-back']{
+width: 18rem;
+left: 1rem;
+}
+.calories{
+     position: relative;
+     top: 8rem;
+     left: 5rem;
+     margin-bottom: 5rem;
+}
+}

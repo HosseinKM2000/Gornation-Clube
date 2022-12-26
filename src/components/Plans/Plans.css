@@ -1,0 +1,156 @@
+.Plans-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+.Plans-header{
+    display: flex;
+    gap:2rem;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: San-b;
+    justify-content: center;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.Plans{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:2rem ;
+    gap: 3rem;
+}
+.Plans > .Plan{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20%;
+    background-color:rgb(139 139 139);
+}
+img[alt='plan-img']{
+    width: 15%;
+}
+span[alt='plan-head']{
+    color: rgb(255, 255, 255);
+    font-family: San-b;
+}
+.Plan > div:nth-of-type(1){
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+img[alt='dollar']{
+    width: 15%;
+}
+img[alt='dollar'] + span{
+  font-size: 3rem;
+  color: white;
+  font-family: San-b;
+
+}
+.Plan > div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Plan > div:nth-of-type(2) > div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.Plan > div:nth-of-type(2) > div > img{
+    width: 10%;
+}
+.Plan > div:nth-of-type(2) > div > span{
+    color: white;
+    font-family: San-r;
+}
+.Plan > div:nth-of-type(3){
+    display: flex;
+    align-items: center;
+    margin: 1rem 0px;
+    gap: 0.7rem;
+}
+.Plan > div:nth-of-type(3) > img{
+    width: 5%;
+}
+.Plan > div:nth-of-type(3) > span{
+    color: white;
+    font-family: San-r;
+    font-size: 0.8rem;
+}
+.Plan > button{
+    height: 2.5rem;
+    font-family: San-b;
+    border: none;
+}
+.Plan > button:hover{
+    background-color: rgb(210, 210, 210);
+}
+.Plans > .Plan:nth-of-type(2){
+    transform: scale(1.15,1.15);
+    background: linear-gradient(30deg, rgba(2,0,36,1) 0%, rgb(255, 166, 0) 0%, rgb(255, 153, 0) 25%, rgba(255,138,0,1) 50%, rgba(255,102,0,1) 75%);
+}
+.Plans > .Plan:nth-of-type(2) > button{
+    color: rgb(255, 166, 0);
+    border: none;
+}
+.Plans > .Plan:nth-of-type(2) > button:hover{
+    background-color:rgba(255,102,0,1);
+    color: white;
+}
+.Plan-blur-1{
+  width: 30rem;
+  height: 20rem;
+  top: 130rem;
+  left: 0rem;
+}
+.Plan-blur-2{
+    width: 30rem;
+    height: 20rem;
+    top: 130rem;
+    right: 0rem;
+}
+
+/* media */
+@media screen and (max-width: 768px){
+ 
+.Plans-header{
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.Plans-header > span.stroke-text{
+    font-size: 1.8rem;
+}
+.Plans{
+    flex-direction: column;
+}
+.Plans > .Plan{
+    width: 80%;
+}
+.Plans > .Plan:nth-of-type(2){
+    transform: none;
+}
+.Plan-blur-1{
+    width: 15rem;
+    height: 15rem;
+    top: 115rem;
+    left: 2rem;
+    filter: blur(100px);
+}
+.Plan-blur-2{
+    width: 15rem;
+    height: 15rem;
+    top: 191rem;
+    right: 2rem;
+    filter: blur(100px);
+}
+}

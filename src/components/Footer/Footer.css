@@ -1,0 +1,57 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+.footer-container > div{
+    display: flex;
+    gap: 5rem;
+    margin: 1rem 0px;
+}
+.footer-container > hr{
+    width: 100%;
+}
+.footer-container > img[alt='gornationLOGO']{
+    width: 20%;
+}
+.Footer-blur-1{
+    right:0;
+    background: var(--orange);
+    width: 26rem;
+    height: 12rem;
+    filter: blur(150px);
+}
+.Footer-blur-2{
+    left: 0;
+    width: 26rem;
+    height: 12rem;
+    filter: blur(150px);
+    background: var(--orange);
+}
+
+
+/* media */
+@media screen and (max-width: 768px){
+
+.footer-container > img[alt='gornationLOGO']{
+    width: 50%;
+}
+.Footer-blur-1{
+    filter: blur(100px);
+    width: 10rem;
+    height: 10rem;
+    top: 410rem;
+    right: 0%;
+}
+.Footer-blur-2{
+    filter: blur(100px);
+    width: 10rem;
+    height: 10rem;
+    top: 410rem;
+    left: 0%;
+}
+
+}
